@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+  background-color: #eaedee;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.add {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: #616060;
+  background-color: #dfdfdd;
+  cursor: pointer;
+  border: none;
+}
+
+.add i {
+  padding: 0.15rem;
+  margin: 0.15rem;
+}
+
+.note {
+  height: 400px;
+  width: 400px;
+  margin: 1rem 2rem 4rem 1rem;
+  background-color: #d1cece;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #616060;
+}
+
+.note .tools button {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.note .main {
+  height: 400px;
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.note textarea {
+  height: 400px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+.note .hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

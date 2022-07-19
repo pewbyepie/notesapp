@@ -1,0 +1,71 @@
+@import "./basic";
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 3rem;
+    @include bgcolor(#eaedee);
+    @include fonts();
+}
+
+.add {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    @include color(#616060);
+    @include bgcolor(rgb(223, 223, 221));
+    cursor: pointer;
+    border: none;
+
+    i {
+        padding: 0.15rem;
+        margin: 0.15rem;
+    }
+}
+
+.note {
+    height: 400px;
+    width: 400px;
+    margin: 1rem 2rem 4rem 1rem;
+    @include bgcolor(rgb(209, 206, 206));
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    
+    .tools {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem;
+        @include bgcolor(#616060);
+        
+        button {
+            margin-left: 0.5rem;
+            font-size: 1rem;
+            @include color(#fff);
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            }
+    }
+
+    .main {
+        height: 400px;
+        width: 100%;
+        @include bgcolor(#eee);
+        overflow: hidden;
+    }
+
+    textarea {
+        height: 400px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: inherit;
+        border: none;
+        outline: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
